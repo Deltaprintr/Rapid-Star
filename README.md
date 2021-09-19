@@ -6,7 +6,7 @@ Rapid Star is a PNP (Pick and Place) system developed and maintained by [Deltapr
 
 # Contribute
 
-Currently the Rapid Star is not fully supported in OpenPNP due to a few missing mandatory features. We're actively looking for developers who would be interested in helping us incorporate support into OpenPNP. You can see the [full list of features here](https://docs.google.com/document/d/1N6ggEopUlor0r7kC39QZDpr8pi3T8QCvNgg1l5aPtP0/edit?usp=sharing).
+Currently the Rapid Star is not fully supported in OpenPNP due to a few missing mandatory features. We're actively looking for developers who would be interested in helping us incorporate support into OpenPNP. You can see the [full list of features here](https://docs.google.com/document/d/1N6ggEopUlor0r7kC39QZDpr8pi3T8QCvNgg1l5aPtP0/edit?usp=sharing). If you're interested in helping, let us know on our [Discord Server](https://discord.gg/t2FcjAU7hC).
 
 # Support
 
@@ -16,6 +16,10 @@ While you are free to source and build a Rapid Star on your own, we are only abl
 - Mechanics (Full machine assembly)
 - Electronics (Rapid Board and Conveyor)
 - Settings (machine.xml for OpenPNP and Smoothieware config)
+
+# Programs Used
+- Fusion 360
+- Eagle CAD
 
 # License
 
