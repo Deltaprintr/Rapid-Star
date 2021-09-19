@@ -10,4 +10,4 @@ BY  – Credit must be given to the creator
 NC  – Only noncommercial uses of the work are permitted
 SA  – Adaptations must be shared under the same terms
 
-Deltaprintr and Rapid Star is a trademark of Deltaprinter Inc.
+Deltaprintr and Rapid Star is a trademark of Deltaprinter Inc. Other trademarks may be pending.
