@@ -10,4 +10,4 @@ CC BY-NC-SA includes the following elements:
 * NC  – Only noncommercial uses of the work are permitted
 * SA  – Adaptations must be shared under the same terms
 
-Deltaprintr and Rapid Star is a trademark of Deltaprinter Inc. Other trademarks may be pending.
+Deltaprintr, Rapid Star and Rapid Feeder are trademarks of Deltaprinter Inc. Other trademarks may be pending.
