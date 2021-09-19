@@ -1,6 +1,8 @@
+![Rapid Star Image](https://23re3128oij2wuxh2nd3ndfi-wpengine.netdna-ssl.com/wp-content/uploads/2021/08/Rapid-Star-Machine-1016x572.png)
+
 # Overview
 
-Rapid Star is a PNP (Pick and Place) system developed and maintained by [Deltaprintr](https://deltaprintr.com) and run on the free [OpenPNP Software](https://openpnp.org) used for assembling circuit boards. Documentation on building a Rapid Star can be found [here on our website](https://www.deltaprintr.com/docs/rapid-star/). If you would like to show your support for the project, consider purchasing components directly from Deltaprintr. This not only allows us to continue developing the Rapid Star, but also enables us to provide support directly to you in the process.
+Rapid Star is a PNP (Pick and Place) system developed and maintained by [Deltaprintr](https://deltaprintr.com) and run on the free [OpenPNP Software](https://openpnp.org) and [Smoothieware Firmware](http://smoothieware.org) used for assembling circuit boards. Documentation on building a Rapid Star can be found [on our website](https://www.deltaprintr.com/docs/rapid-star/). If you would like to show your support for the project, consider purchasing components directly from Deltaprintr. This not only allows us to continue developing the Rapid Star, but also enables us to provide support directly to you in the process.
 
 # Contribute
 
@@ -8,7 +10,7 @@ Currently the Rapid Star is not fully supported in OpenPNP due to a few missing 
 
 # Support
 
-While you are free to source and build a Rapid Star on your own, we are only able to provide support for customers who purchase components directly from us. This way we can guarantee your parts came from a reputable source and have a warranty. However, we do have a community of users who would be happy to help you on our [Discord Server](https://discord.gg/t2FcjAU7hC).
+While you are free to source and build a Rapid Star on your own, we are only able to provide support for customers who purchase components directly from us. This way we can guarantee your parts came from a reputable source and have a warranty. It's worth noting that some custom parts such as the head must be made to a high tolerance to ensure air does not leak. For this reason, we recommend to get parts directly for us as it will save you time and frustration. However if you do decide to source parts elsewhere, we do have a community of users who would be happy to help you on our [Discord Server](https://discord.gg/t2FcjAU7hC).
 
 # Github Structure
 - Mechanics (Full machine assembly)
