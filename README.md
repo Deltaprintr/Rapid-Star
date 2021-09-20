@@ -8,6 +8,8 @@ Rapid Star is a PNP (Pick and Place) system developed and maintained by [Deltapr
 
 Currently the Rapid Star is not fully supported in OpenPNP due to a few missing mandatory features. We're actively looking for developers who would be interested in helping us incorporate support into OpenPNP. You can see the [full list of features here](https://docs.google.com/document/d/1N6ggEopUlor0r7kC39QZDpr8pi3T8QCvNgg1l5aPtP0/edit?usp=sharing). If you're interested in helping, let us know on our [Discord Server](https://discord.gg/t2FcjAU7hC)!
 
+If you'd like to keep up with the discussion, you can also follow us on [Instagram](https://www.instagram.com/deltaprintr/), [Facebook](https://www.facebook.com/Deltaprintr/) or [Twitter](https://twitter.com/deltaprintr)!
+
 # Support
 
 While you are free to source and build a Rapid Star on your own, we are only able to provide support for customers who purchase components directly from us. This way we can guarantee your parts came from a reputable source and have a warranty. It's worth noting that some custom parts such as the head must be machined to a high tolerance to ensure air does not leak. For this reason, we recommend to get parts directly from us as it will save you time and frustration. However, if you do decide to source parts elsewhere, we do have a community of users who would be happy to help you on our [Discord Server](https://discord.gg/t2FcjAU7hC).
