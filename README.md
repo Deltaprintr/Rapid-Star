@@ -15,7 +15,7 @@ While you are free to source and build a Rapid Star on your own, we are only abl
 # Github Structure
 - Mechanics (Full machine assembly)
 - Electronics (Rapid Board, Conveyor, C Endstop, Nozzle Magazine)
-- Settings (machine.xml for OpenPNP and Smoothieware config)
+- Settings (OpenPNP machine.xml and Smoothieware config)
 
 # Programs Used
 - Fusion 360
