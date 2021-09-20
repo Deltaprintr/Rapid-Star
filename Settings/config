@@ -1,0 +1,301 @@
+# Smoothieboard configuration file, see http://smoothieware.org/configuring-smoothie
+# NOTE Lines must not exceed 132 characters, and '#' characters mean what follows is ignored
+## Robot module configurations : general handling of movement G-codes and slicing into moves
+
+# Basic motion configuration
+default_feed_rate                            3000             # Default speed (mm/minute) for G1/G2/G3 moves
+default_seek_rate                            500              # Default speed (mm/minute) for G0 moves
+mm_per_arc_segment                           0                # Fixed length for line segments that divide arcs, 0 to disable
+#mm_per_line_segment                         5                # Cut lines into segments this size
+mm_max_arc_error                             0.01             # The maximum error for line segments that divide arcs 0 to disable
+                                                              # note it is invalid for both the above be 0
+                                                              # if both are used, will use largest segment length based on radius
+
+on_boot_gcode_enable                         true             # If set to true, play the on_boot_gcode file when the board boots up
+
+# Arm solution configuration : Cartesian robot. Translates mm positions into stepper positions
+# See http://smoothieware.org/stepper-motors
+alpha_steps_per_mm                           26.67            # Steps per mm for alpha ( X ) stepper
+beta_steps_per_mm                            100              # Steps per mm for beta ( Y ) stepper
+gamma_steps_per_mm                           400              # Steps per mm for gamma ( Z ) stepper
+delta_steps_per_mm                           100              # Steps per mm for alpha ( A ) stepper (Not Used)
+epsilon_steps_per_mm                         106.56           # Steps per mm for beta ( B ) stepper (D Axis)
+zeta_steps_per_mm                            8.88             # Steps per mm for gamma ( C ) stepper (C Axis)
+
+# Planner module configuration : Look-ahead and acceleration configuration
+# See http://smoothieware.org/motion-control
+acceleration                                 500              # Acceleration in mm/second (was 400)
+junction_deviation                           0.05             # See http://smoothieware.org/motion-control#junction-deviation
+
+# Cartesian axis speed limits
+x_axis_max_speed                             50000            # Maximum speed in mm/min
+y_axis_max_speed                             50000            # Maximum speed in mm/min
+z_axis_max_speed                             50000            # Maximum speed in mm/min
+a_axis_max_speed                             50000            # Maximum speed in mm/min
+b_axis_max_speed                             50000            # Maximum speed in mm/min
+c_axis_max_speed                             50000            # Maximum speed in mm/min
+
+# Stepper module configuration
+# Pins are defined as  ports, and pin numbers, appending "!" to the number will invert a pin
+# See http://smoothieware.org/pin-configuration and http://smoothieware.org/pinout
+# >>>> NOTE: CURRENT SETTINGS ARE SET FOR 24V POWER SUPPLY <<<<
+
+currentcontrol_module_enable                 true             # Control stepper motor current via the configuration file
+
+# X MOTOR
+alpha_step_pin                               2.3              # Pin for alpha stepper step signal
+alpha_dir_pin                                4.29!            # Pin for alpha stepper direction, add '!' to reverse direction
+alpha_en_pin                                 0.4              # Pin for alpha enable
+alpha_current                                1.5              # X stepper motor current
+alpha_max_rate                               30000.0          # Maximum rate in mm/min
+
+# Y MOTOR
+beta_step_pin                                1.24             # Pin for beta stepper step signal
+beta_dir_pin                                 1.4!              # Pin for gamma stepper direction, add '!' to reverse direction
+beta_en_pin                                  1.1              # Pin for beta enable
+beta_current                                 0.5              # Y stepper motor current
+beta_max_rate                                30000.0          # Maxmimum rate in mm/min
+
+# Z MOTOR
+gamma_step_pin                               2.8              # Pin for gamma stepper step signal
+gamma_dir_pin                                0.11             # Pin for gamma stepper direction, add '!' to reverse direction
+gamma_en_pin                                 0.10             # Pin for gamma enable
+gamma_current                                0.5              # Z stepper motor current
+gamma_max_rate                               30000.0          # Maxmimum rate in mm/min
+
+# A MOTOR (NOT USED)
+delta_step_pin                               2.0              # Pin for delta stepper step signal
+delta_dir_pin                                0.22             # Pin for delta stepper direction, add '!' to reverse direction
+delta_en_pin                                 2.6              # Pin for delta enable pin
+delta_current                                0.5              # A stepper motor current
+delta_max_rate                               30000.0          # Maximum rate in mm/min
+
+# B MOTOR (D AXIS)
+epsilon_step_pin                             2.1              # Pin for delta stepper step signal
+epsilon_dir_pin                              0.20             # Pin for delta stepper direction, add '!' to reverse direction
+epsilon_en_pin                               0.21             # Pin for delta enable pin
+epsilon_current                              0.01             # A stepper motor current
+epsilon_max_rate                             30000.0          # Maximum rate in mm/min
+
+# C MOTOR (C AXIS)
+zeta_step_pin                                2.2              # Pin for delta stepper step signal
+zeta_dir_pin                                 0.5              # Pin for delta stepper direction, add '!' to reverse direction
+zeta_en_pin                                  0.19             # Pin for delta enable pin
+zeta_current                                 1.5              # A stepper motor current
+zeta_max_rate                                30000.0          # Maximum rate in mm/min
+
+##################################################################################################################################
+##################################################################################################################################
+
+# ENDSTOPS
+
+## Endstops new syntax (the name is not significant)
+# NOTE only a min or a max homing endstop maybe defined
+
+endstop.maxx.enable                          true             # enable an endstop
+endstop.maxx.pin                             0.16^!           # pin
+endstop.maxx.homing_direction                home_to_max      # direction it moves to the endstop
+endstop.maxx.homing_position                 550              # the cartesian coordinate this is set to when it homes
+endstop.maxx.axis                            X                # the axis designator
+endstop.maxx.max_travel                      560              # the maximum travel in mm before it times out
+endstop.maxx.fast_rate                       50               # fast homing rate in mm/sec
+endstop.maxx.slow_rate                       25               # slow homing rate in mm/sec
+endstop.maxx.retract                         5                # bounce off endstop in mm
+
+endstop.maxy.enable                          true             # enable an endstop
+endstop.maxy.pin                             0.15^!           # pin
+endstop.maxy.homing_direction                home_to_max      # direction it moves to the endstop
+endstop.maxy.homing_position                 285              # the cartesian coordinate this is set to when it homes
+endstop.maxy.axis                            Y                # the axis designator
+endstop.maxy.max_travel                      500              # the maximum travel in mm before it times out
+endstop.maxy.fast_rate                       50               # fast homing rate in mm/sec
+endstop.maxy.slow_rate                       25               # slow homing rate in mm/sec
+endstop.maxy.retract                         5                # bounce off endstop in mm
+
+endstop.maxz.enable                          true             # enable an endstop
+endstop.maxz.pin                             0.17^!           # pin
+endstop.maxz.homing_direction                home_to_max      # direction it moves to the endstop
+endstop.maxz.homing_position                 50            # the cartesian coordinate this is set to when it homes // was 38.40
+endstop.maxz.axis                            Z                # the axis designator
+endstop.maxz.max_travel                      500              # the maximum travel in mm before it times out
+endstop.maxz.fast_rate                       50               # fast homing rate in mm/sec
+endstop.maxz.slow_rate                       25               # slow homing rate in mm/sec
+endstop.maxz.retract                         5                # bounce off endstop in mm
+
+endstop.mina.enable                          false            # enable an endstop
+endstop.mina.pin                             1.22^!           # pin
+endstop.mina.homing_direction                home_to_min      # direction it moves to the endstop
+endstop.mina.homing_position                 100              # the cartesian coordinate this is set to when it homes
+endstop.mina.axis                            A                # the axis designator
+endstop.mina.max_travel                      500              # the maximum travel in mm before it times out
+endstop.mina.fast_rate                       50               # fast homing rate in mm/sec
+endstop.mina.slow_rate                       25               # slow homing rate in mm/sec
+endstop.mina.retract                         5                # bounce off endstop in mm
+
+endstop.minb.enable                          true             # enable an endstop
+endstop.minb.pin                             1.23v!           # pin
+endstop.minb.homing_direction                home_to_min      # direction it moves to the endstop
+endstop.minb.homing_position                 0                # the cartesian coordinate this is set to when it homes
+endstop.minb.axis                            B                # the axis designator
+endstop.minb.max_travel                      500              # the maximum travel in mm before it times out
+endstop.minb.fast_rate                       50               # fast homing rate in mm/sec
+endstop.minb.slow_rate                       25               # slow homing rate in mm/sec
+endstop.minb.retract                         5                # bounce off endstop in mm
+
+endstop.minc.enable                          false            # enable an endstop
+endstop.minc.pin                             0.18^!           # pin
+endstop.minc.homing_direction                home_to_min      # direction it moves to the endstop
+endstop.minc.homing_position                 100              # the cartesian coordinate this is set to when it homes
+endstop.minc.axis                            C                # the axis designator
+endstop.minc.max_travel                      500              # the maximum travel in mm before it times out
+endstop.minc.fast_rate                       50               # fast homing rate in mm/sec
+endstop.minc.slow_rate                       25               # slow homing rate in mm/sec
+endstop.minc.retract                         5                # bounce off endstop in mm
+
+# optional order in which axis will home, default is they all home at the same time,
+# if this is set it will force each axis to home one at a time in the specified order
+#homing_order                                ZXY              # Z axis followed by X then Y last
+home_z_first		                             true             # Home Z first
+#move_to_origin_after_home                   false            # move XY to 0,0 after homing
+#endstop_debounce_count                      100              # uncomment if you get noise on your endstops, default is 100
+#endstop_debounce_ms                         1                # uncomment if you get noise on your endstops, default is 1 millisecond debounce
+
+##################################################################################################################################
+##################################################################################################################################
+
+# VACUUM SENSING
+
+# VAC1
+temperature_control.vac_n1.enable                 true             # Whether to activate this ( "hotend" ) module at all.
+temperature_control.vac_n1.sensor 		            ad8495           #
+temperature_control.vac_n1.ad8495_pin             0.23             # Pin for the thermistor to read
+temperature_control.vac_n1.ad8495_offset          0                #
+temperature_control.vac_n1.heater_pin             nc               # Pin to controls the heater, nc if a read only thermistor.                                                   # thermistor is being defined
+temperature_control.vac_n1.readings_per_second 		500 	           # How many times per second to read temperature from the sensor.
+temperature_control.vac_n1.get_m_code 		        104 		         # Calling this M-code will return the current temperature.
+temperature_control.vac_n1.designator             VAC              # Designator letter for this module
+temperature_control.vac_n1.rt_curve               20.0,220,120,6000,220,120000
+
+##################################################################################################################################
+##################################################################################################################################
+
+# NOZZLE MAGAZINE
+
+switch.nozzlemag.enable                            	  true            # Enable this module
+switch.nozzlemag.startup_state                        false
+switch.nozzlemag.input_on_command                     M804            # Command that will turn this switch on
+switch.nozzlemag.input_off_command                 	  M805            # Command that will turn this switch off
+switch.nozzlemag.output_pin                        	  1.0             # Pin this module controls
+switch.nozzlemag.output_type                       	  digital             # PWM output settable with S parameter in the input_on_comand
+
+switch.nozzlemagendstop1.enable                       true
+switch.nozzlemagendstop1.input_pin                    3.25^
+switch.nozzlemagendstop1.input_pin_behavior           momentary
+switch.nozzlemagendstop1.output_on_command            M805
+
+switch.nozzlemagendstop2.enable                       true
+switch.nozzlemagendstop2.input_pin                    3.26^
+switch.nozzlemagendstop2.input_pin_behavior           momentary
+switch.nozzlemagendstop2.output_on_command            M805
+
+
+##################################################################################################################################
+##################################################################################################################################
+
+# 3 AMP  MOSFET (VAC PUMP)
+
+switch.pumps.enable                            	    true             # Enable this module
+switch.pumps.input_on_command                       M816             # Command that will turn this switch on
+switch.pumps.input_off_command                 	    M817             # Command that will turn this switch off
+switch.pumps.output_pin                        	    1.31             # Pin this module controls
+switch.pumps.output_type                       	    digital          # PWM output settable with S parameter in the input_on_comand
+
+##################################################################################################################################
+##################################################################################################################################
+
+# 450 MA MOSFETS (LEDS, DC MOTORS AND SOLENOIDS)
+
+# MAIN POWER INPUT MOSFET 1
+switch.smallmosfet1.enable                                true            # Enable this module
+switch.smallmosfet1.input_on_command                      M810				  	# Command that will turn this switch on
+switch.smallmosfet1.input_off_command                     M811				  	# Command that will turn this switch off
+switch.smallmosfet1.output_pin                            2.11            # Pin this module controls
+switch.smallmosfet1.output_type                           digital         # PWM output settable with S parameter in the input_on_comand
+
+# MAIN POWER INPUT MOSFET 2
+switch.smallmosfet2.enable                            	  true            # Enable this module
+switch.smallmosfet2.input_on_command                      M106            # Command that will turn this switch on
+switch.smallmosfet2.input_off_command                 	  M107            # Command that will turn this switch off
+switch.smallmosfet2.output_pin                        	  2.13            # Pin this module controls
+switch.smallmosfet2.output_type                       	  digital         # PWM output settable with S parameter in the input_on_comand
+
+# MAIN POWER INPUT MOSFET 3
+switch.smallmosfet3.enable                                true				    # Enable this module
+switch.smallmosfet3.input_on_command                      M800				    # Command that will turn this switch on
+switch.smallmosfet3.input_off_command                     M801				    # Command that will turn this switch off
+switch.smallmosfet3.output_pin                            1.27            # Pin this module controls
+switch.smallmosfet3.output_type                           digital         # PWM output settable with S parameter in the input_on_comand
+
+# 5V MOSFET 1
+switch.smallmosfet4.enable                                true            # Enable this module
+switch.smallmosfet4.input_on_command                      M802				  	# Command that will turn this switch on
+switch.smallmosfet4.input_off_command                     M803				  	# Command that will turn this switch off
+switch.smallmosfet4.output_pin                            1.28            # Pin this module controls
+switch.smallmosfet4.output_type                           digital         # PWM output settable with S parameter in the input_on_comand
+
+# 5V MOSFET 3
+switch.smallmosfet6.enable                                true				    # Enable this module
+switch.smallmosfet6.input_on_command                      M806				    # Command that will turn this switch on
+switch.smallmosfet6.input_off_command                     M807				    # Command that will turn this switch off
+switch.smallmosfet6.output_pin                            1.29            # Pin this module controls
+switch.smallmosfet6.output_type                           digital         # PWM output settable with S parameter in the input_on_comand
+
+
+##################################################################################################################################
+##################################################################################################################################
+
+#CONVEYER BELT
+
+# Move Belt Right
+switch.conveyermotora.enable                                true            # Enable this module
+switch.conveyermotora.input_on_command                      M812				  	# Command that will turn this switch on
+switch.conveyermotora.input_off_command                     M813				  	# Command that will turn this switch off
+switch.conveyermotora.output_pin                            2.4             # Pin this module controls
+switch.conveyermotora.output_type                           digital         # PWM output settable with S parameter in the input_on_comand
+
+# Move Belt Left
+switch.conveyermotorb.enable                            	  true             # Enable this module
+switch.conveyermotorb.input_on_command                      M814             # Command that will turn this switch on
+switch.conveyermotorb.input_off_command                 	  M815             # Command that will turn this switch off
+switch.conveyermotorb.output_pin                        	  2.5              # Pin this module controls
+switch.conveyermotorb.output_type                       	  digital          # PWM output settable with S parameter in the input_on_comand
+
+# Switch module for servo control using S/W PWM
+switch.servo.enable                            true             # Enable this module
+switch.servo.input_on_command                  M280             # M280 S7.5 would be midway
+switch.servo.input_off_command                 M281             # Same as M280 S0 0% duty cycle, effectively off
+switch.servo.output_pin                        1.14             # May be any spare pin
+switch.servo.output_type                       swpwm            # Software pwm output settable with S parameter in the input_on_command
+
+# Conveyor In Sensor
+switch.conveyorin.enable                       true
+switch.conveyorin.input_pin                    1.30v!
+switch.conveyorin.input_pin_behavior           momentary
+switch.conveyorin.output_on_command            M814
+
+# Conveyor Out Sensor
+switch.conveyorout.enable                      true
+switch.conveyorout.input_pin                   0.28v!
+switch.conveyorout.input_pin_behavior          momentary
+switch.conveyorout.output_on_command           M815
+
+
+##################################################################################################################################
+##################################################################################################################################
+
+# SYSTEM CONFIGURATION
+
+# Serial communications configuration ( baud rate defaults to 9600 if undefined )
+# For communication over the UART port, *not* the USB/Serial port
+uart0.baud_rate                            115200           # Baud rate for the default hardware ( UART ) serial port
+msd_disable                                true             # Disable the MSD (USB SDCARD), see http://smoothieware.org/troubleshooting#disable-msd
