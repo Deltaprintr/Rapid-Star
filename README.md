@@ -16,7 +16,7 @@ While you are free to source and build a Rapid Star on your own, we are only abl
 
 # Github Structure
 - Mechanics (Full machine assembly)
-- Electronics (Rapid Board, Conveyor, C Endstop, Nozzle Magazine)
+- Electronics (Rapid Board, Conveyor, C Endstop, Nozzle Magazine, Feeder Extension, Feeder Motherboard)
 - Settings (OpenPNP machine.xml and Smoothieware config)
 
 # Programs Used
