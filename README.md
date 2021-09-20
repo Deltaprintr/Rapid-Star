@@ -4,6 +4,8 @@
 
 Rapid Star is a PNP (Pick and Place) system developed and maintained by [Deltaprintr](https://deltaprintr.com), run on the free [OpenPNP Software](https://openpnp.org) and [Smoothieware Firmware](http://smoothieware.org) used for assembling circuit boards with the [Rapid Feeder](https://www.deltaprintr.com/product/rapid-feeder/) system. It features a conveyor belt that can hold boards up to 165mm (6.5") wide, 50 (8mm) feeders and has a head capable of supporting up to 8 nozzles with a 20 nozzle magazine auto-changer. Documentation on building a Rapid Star can be found [on our website](https://www.deltaprintr.com/docs/rapid-star/). The release is considered stable as the machine has been fully tested manually. If you would like to show your support for the project, consider purchasing components directly from Deltaprintr. This not only allows us to continue developing the Rapid Star, but also enables us to provide support directly to you in the process.
 
+If you'd like to find out once Deltaprintr starts offering a complete kit, you can subscribe to our [mailing list](https://mailchi.mp/ee676e0cfc9f/rapidstar) (we promise we hate spam too!).
+
 # Contribute
 
 Currently the Rapid Star is not fully supported in OpenPNP due to a few missing mandatory features. We're actively looking for developers who would be interested in helping us incorporate support into OpenPNP. You can see the [full list of features here](https://docs.google.com/document/d/1N6ggEopUlor0r7kC39QZDpr8pi3T8QCvNgg1l5aPtP0/edit?usp=sharing). If you're interested in helping, let us know on our [Discord Server](https://discord.gg/t2FcjAU7hC)!
