@@ -16,6 +16,8 @@ If you'd like to keep up with the latest news, you can also follow us on [Instag
 
 While you are free to source and build a Rapid Star on your own, we are only able to provide support for customers who purchase components directly from us. This way we can guarantee your parts came from a reputable source and have a warranty. It's worth noting that some custom parts such as the head must be machined to a high tolerance to ensure air does not leak. For this reason, we recommend to get parts directly from us as it will save you time and frustration. However, if you do decide to source parts elsewhere, we do have a community of users who would be happy to help you on our [Discord Server](https://discord.gg/t2FcjAU7hC).
 
+You can view a 3D model of the full assembly in your browser here: https://autode.sk/3zCK5wB
+
 Support questions submitted via Github will be deleted. Only bugs/issues should be submitted via Github.
 
 # Github Structure
