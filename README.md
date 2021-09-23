@@ -29,7 +29,8 @@ Support questions submitted via Github will be deleted. Only bugs/issues should 
 # Github Structure
 - Mechanics (Full machine assembly)
 - Electronics (Rapid Board, Conveyor, C Endstop, Nozzle Magazine, Feeder Extension, Feeder Motherboard)
-- Settings (OpenPNP machine.xml and Smoothieware config)
+- Firmware (Smoothieware and config)
+- Openpnp Settings (OpenPNP machine.xml)
 
 # Programs Used
 - Fusion 360
