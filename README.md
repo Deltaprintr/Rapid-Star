@@ -10,7 +10,7 @@ If you'd like to find out once Deltaprintr starts offering a complete kit, you c
 - Scalable nozzle count at no additional cost
 - Higher CPH
 - Simpler mechanical assembly
-- More X/Y space due to smaller head
+- More X/Y space due to smaller head, which means more space for feeders/trays.
 
 # Contribute
 
