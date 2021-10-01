@@ -31,6 +31,7 @@ Support questions submitted via Github will be deleted. Only bugs/issues should 
 - Electronics (Rapid Board, Conveyor, C Endstop, Nozzle Magazine, Feeder Extension, Feeder Motherboard)
 - Firmware (Smoothieware and config)
 - Openpnp Settings (OpenPNP machine.xml)
+- Jigs (Lens calibration PCB)
 
 # Programs Used
 - Fusion 360
