@@ -106,7 +106,7 @@
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                </nozzle>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" id="NOZ16a97f9bbe52c015" name="N1" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" version="0" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" axis-Z-id="AXS168cdf27f89d826b" axis-rotation-id="AXS168cdf27f89dd0cb" id="NOZ16a97f9bbe52c015" name="N1" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" version="200" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -121,18 +121,30 @@
                </actuator>
             </actuators>
             <cameras>
-               <camera class="org.openpnp.machine.reference.camera.ImageCamera" axis-X-id="AXS16a9739095b8e8b4" axis-Y-id="AXS16a9739095c13168" axis-Z-id="AXS16a9739095c38774" axis-rotation-id="AXS16a9739095c4e704" id="C1" name="Top" looking="Down" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" settle-method="FixedTime" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="24.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" deinterlace="false" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" width="640" height="480" pick-location-tolerance-mm="0.1" pick-location-minimum-score="0.87" place-location-tolerance-mm="0.1" place-location-minimum-score="0.58" filter-test-image-vision="true" sub-pixel-rendering="true">
-                  <units-per-pixel units="Millimeters" x="0.04233" y="0.04233" z="0.0" rotation="0.0"/>
+               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM16a9803763edbcd3" name="Downward Cam" looking="Down" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" settle-method="FixedTime" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" deinterlace="false" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" unique-id="USB 2.0 Camera (HD Camera Manufacturer) 0x1433000005a39310" format-id="7">
+                  <units-per-pixel units="Millimeters" x="0.01607717" y="0.0166113" z="0.0" rotation="0.0"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <calibration enabled="false">
-                     <camera-matrix length="9">1.85872469656252E-309, 9.787503804379018E199, 1.990292490432747E-309, 2.9448903486956687E256, 8.894702279333001E252, 3.655882670311231E233, 2.8295273606458585E276, 9.449159772775047E170, 8.021467554742738E165</camera-matrix>
-                     <distortion-coefficients length="5">NaN, NaN, NaN, 1.689108649608E-311, 4.180331710637E-312</distortion-coefficients>
+                     <camera-matrix length="9">-1.3130212883898926E307, -1.3130212884391347E307, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
+                     <distortion-coefficients length="5">2.13073555394E-312, 6.071E-320, 2.0691572772268053E161, 1.8198445565916874E-306, 2.6308E-319</distortion-coefficients>
                   </calibration>
                   <focus-provider class="org.openpnp.machine.reference.camera.AutoFocusProvider" averaged-frames="1" focus-speed="0.5" show-diagnostics="true">
                      <focal-resolution value="0.05" units="Millimeters"/>
                   </focus-provider>
-                  <source-uri>classpath://samples/pnp-test/pnp-test.png</source-uri>
+                  <back-light-compensation property="BackLightCompensation" value="1"/>
+                  <brightness property="Brightness" value="0"/>
+                  <contrast property="Contrast" value="128"/>
+                  <exposure property="Exposure" value="625" auto="true"/>
+                  <focus property="Focus"/>
+                  <gain property="Gain" value="0"/>
+                  <gamma property="Gamma" value="100"/>
+                  <hue property="Hue" value="0"/>
+                  <power-line-frequency property="PowerLineFrequency" value="1"/>
+                  <saturation property="Saturation" value="64"/>
+                  <sharpness property="Sharpness" value="3"/>
+                  <white-balance property="WhiteBalance" value="4600" auto="true"/>
+                  <zoom property="Zoom"/>
                </camera>
             </cameras>
             <park-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -320,19 +332,30 @@
          </feeder>
       </feeders>
       <cameras>
-         <camera class="org.openpnp.machine.reference.camera.SimulatedUpCamera" id="C2" name="Bottom" looking="Up" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" settle-method="FixedTime" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" deinterlace="false" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" width="640" height="480" simulate-focal-blur="false">
-            <units-per-pixel units="Millimeters" x="0.0134375" y="0.0134375" z="0.0" rotation="0.0"/>
+         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM16a9b22ef81d306a" name="Upward Cam" looking="Down" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" settle-method="FixedTime" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" deinterlace="false" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" unique-id="USB 2.0 Camera #2 (HD Camera Manufacturer) 0x1432000005a39310" format-id="0">
+            <units-per-pixel units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
-            <head-offsets units="Millimeters" x="118.799" y="7.117" z="0.0" rotation="0.0"/>
-            <safe-z value="0.0" units="Millimeters"/>
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <calibration enabled="false">
-               <camera-matrix length="9">3.5E-323, 0.0, 2.5E-323, NaN, 6.93224685617292E-310, 6.932247478583E-310, 0.0, 0.0, 0.0</camera-matrix>
-               <distortion-coefficients length="5">NaN, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
+               <camera-matrix length="9">-1.1125431001505109E307, -1.1125431001505109E307, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
+               <distortion-coefficients length="5">-3.105036184601418E231, -2.320353451706456E77, 7.195931245806352E-67, 1.5034482688E10, 4.840739403341427E-121</distortion-coefficients>
             </calibration>
             <focus-provider class="org.openpnp.machine.reference.camera.AutoFocusProvider" averaged-frames="1" focus-speed="0.5" show-diagnostics="true">
                <focal-resolution value="0.05" units="Millimeters"/>
             </focus-provider>
-            <error-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <back-light-compensation property="BackLightCompensation" value="1"/>
+            <brightness property="Brightness" value="0"/>
+            <contrast property="Contrast" value="128"/>
+            <exposure property="Exposure" value="625" auto="true"/>
+            <focus property="Focus"/>
+            <gain property="Gain" value="0"/>
+            <gamma property="Gamma" value="100"/>
+            <hue property="Hue" value="0"/>
+            <power-line-frequency property="PowerLineFrequency" value="1"/>
+            <saturation property="Saturation" value="64"/>
+            <sharpness property="Sharpness" value="3"/>
+            <white-balance property="WhiteBalance" value="4600" auto="true"/>
+            <zoom property="Zoom"/>
          </camera>
       </cameras>
       <actuators/>
@@ -371,6 +394,8 @@
             <tcp line-ending-type="LF" ip-address="127.0.0.1" port="23" name="TcpCommunications"/>
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <detected-firmware><![CDATA[FIRMWARE_NAME:Smoothieware, FIRMWARE_URL:http%3A//smoothieware.org, X-SOURCE_CODE_URL:https%3A//github.com/markmaker/Smoothieware/tree/feature/best-for-pnp, FIRMWARE_VERSION:feature/best-for-pnp-23a1f0db, X-FIRMWARE_BUILD_DATE:Feb 15 2021 20:36:17, X-SYSTEM_CLOCK:120MHz, X-AXES:6, X-PAXES:6, X-GRBL_MODE:0, X-CNC:0, X-MSD:1]]></detected-firmware>
+            <reported-axes><![CDATA[ok C: X:500.0000 Y:100.0000 Z:50.0000 A:0.0000 B:0.0000 C:0.0000]]></reported-axes>
             <command type="COMMAND_CONFIRM_REGEX">
                <text><![CDATA[^ok.*]]></text>
             </command>
@@ -440,25 +465,36 @@
                <text><![CDATA[{True:M802}{False:M803}]]></text>
             </command>
             <command head-mountable-id="NOZ16a973c67da615f4" type="MOVE_TO_COMMAND">
-               <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {B:B%.4f} C45 F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
+               <text><![CDATA[G0 B45]]></text>
+               <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {C:C%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
             </command>
             <command head-mountable-id="NOZ16a976781b6a8604" type="MOVE_TO_COMMAND">
-               <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {B:B%.4f} C90 F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
+               <text><![CDATA[G0 B90]]></text>
+               <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {C:C%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
             </command>
             <command head-mountable-id="NOZ16a976789f9a52b0" type="MOVE_TO_COMMAND">
-               <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {B:B%.4f} C135 F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
+               <text><![CDATA[G0 B135]]></text>
+               <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {C:C%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
             </command>
             <command head-mountable-id="NOZ16a976792a9a7fe8" type="MOVE_TO_COMMAND">
-               <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {B:B%.4f} C180 F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
+               <text><![CDATA[G0 B180]]></text>
+               <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {C:C%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
             </command>
             <command head-mountable-id="NOZ16a97679aecc4350" type="MOVE_TO_COMMAND">
-               <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {B:B%.4f} C225 F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
+               <text><![CDATA[G0 B225]]></text>
+               <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {C:C%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
             </command>
             <command head-mountable-id="NOZ16a9767a728e4860" type="MOVE_TO_COMMAND">
-               <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {B:B%.4f} C270 F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
+               <text><![CDATA[G0 B270]]></text>
+               <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {C:C%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
             </command>
             <command head-mountable-id="NOZ16a976816f71bc14" type="MOVE_TO_COMMAND">
-               <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {B:B%.4f} C315 F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
+               <text><![CDATA[G0 B315]]></text>
+               <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {C:C%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
+            </command>
+            <command head-mountable-id="NOZ16a97f9bbe52c015" type="MOVE_TO_COMMAND">
+               <text><![CDATA[G0 B0]]></text>
+               <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {C:C%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
             </command>
          </driver>
       </drivers>
