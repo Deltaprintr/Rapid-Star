@@ -32,6 +32,7 @@ Support questions submitted via Github will be deleted. Only bugs/issues should 
 - Firmware (Smoothieware and config)
 - Openpnp Settings (OpenPNP machine.xml)
 - Jigs (Lens calibration PCB)
+- Scripts (Gcode for upward lens cam calibration)
 
 # Programs Used
 - Fusion 360
