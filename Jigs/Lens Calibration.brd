@@ -3,10 +3,10 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="22.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -25,7 +25,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -143,18 +143,23 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyOTZkZmI3" projecturn="a.cGVyc29uYWw6dWUyOTZkZmI3IzIwMjEwMjA5MzgwOTE0NjU2" f3durn="urn:adsk.wipprod:dm.lineage:N0El2f6vTJKpfHPbXgG3QA" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="ae3afc45-f5d2-414e-9895-d1ad6c2e4a30" lastsyncedrevisionid="ae3afc45-f5d2-414e-9895-d1ad6c2e4a30" lastboardhashguid="4d2f8bcc-e184-8669-3ffb-f7e391d2a2fe" lastpushedtime="2021-10-01T18:42:48Z" linktopcb3d="true"/>
 <plain>
 <wire x1="0" y1="0" x2="33.75" y2="0" width="0" layer="20"/>
 <wire x1="33.75" y1="0" x2="33.75" y2="45" width="0" layer="20"/>
 <wire x1="33.75" y1="45" x2="0" y2="45" width="0" layer="20"/>
 <wire x1="0" y1="45" x2="0" y2="0" width="0" layer="20"/>
 <text x="30.226" y="0.635" size="0.762" layer="22" rot="MR90">Rapid Star
-Lens Calibration
+Calibration PCB
 Deltaprintr.com</text>
 <circle x="16.875" y="22.5" radius="4.75" width="0.1524" layer="22"/>
-<text x="18.288" y="21.844" size="1.27" layer="22" rot="MR0">508</text>
+<text x="17.018" y="22.606" size="1.27" layer="22" rot="MR0" align="center">508
+Nozzle</text>
 <wire x1="16.875" y1="30" x2="16.875" y2="40" width="0.1524" layer="22"/>
 <wire x1="25" y1="22.5" x2="30" y2="22.5" width="0.1524" layer="22"/>
+<rectangle x1="23.73" y1="33.984" x2="28.73" y2="38.984" layer="16"/>
+<rectangle x1="23.73" y1="33.984" x2="28.73" y2="38.984" layer="30"/>
+<text x="28.857" y="31.75" size="1.016" layer="22" rot="MR0">5x5 mm</text>
 </plain>
 <libraries>
 <library name="adafruit" urn="urn:adsk.eagle:library:420">
@@ -441,6 +446,11 @@ which will not be processed correctly with this version.
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
