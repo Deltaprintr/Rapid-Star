@@ -142,12 +142,12 @@ endstop.minb.fast_rate                       50               # fast homing rate
 endstop.minb.slow_rate                       25               # slow homing rate in mm/sec
 endstop.minb.retract                         5                # bounce off endstop in mm
 
-endstop.minc.enable                          false            # enable an endstop
+endstop.minc.enable                          true             # enable an endstop
 endstop.minc.pin                             0.18^!           # pin
 endstop.minc.homing_direction                home_to_min      # direction it moves to the endstop
-endstop.minc.homing_position                 100              # the cartesian coordinate this is set to when it homes
+endstop.minc.homing_position                 0                # the cartesian coordinate this is set to when it homes
 endstop.minc.axis                            C                # the axis designator
-endstop.minc.max_travel                      500              # the maximum travel in mm before it times out
+endstop.minc.max_travel                      400              # the maximum travel in mm before it times out
 endstop.minc.fast_rate                       50               # fast homing rate in mm/sec
 endstop.minc.slow_rate                       25               # slow homing rate in mm/sec
 endstop.minc.retract                         5                # bounce off endstop in mm
@@ -156,7 +156,7 @@ endstop.minc.retract                         5                # bounce off endst
 # if this is set it will force each axis to home one at a time in the specified order
 #homing_order                                ZXY              # Z axis followed by X then Y last
 home_z_first		                             true             # Home Z first
-#move_to_origin_after_home                   false            # move XY to 0,0 after homing
+move_to_origin_after_home                    true            # move XY to 0,0 after homing
 #endstop_debounce_count                      100              # uncomment if you get noise on your endstops, default is 100
 #endstop_debounce_ms                         1                # uncomment if you get noise on your endstops, default is 1 millisecond debounce
 
@@ -222,14 +222,14 @@ switch.smallmosfet1.input_off_command                     M811				  	# Command t
 switch.smallmosfet1.output_pin                            2.11            # Pin this module controls
 switch.smallmosfet1.output_type                           digital         # PWM output settable with S parameter in the input_on_comand
 
-# MAIN POWER INPUT MOSFET 2
+# MAIN POWER INPUT MOSFET 2 (Upward Lights)
 switch.smallmosfet2.enable                            	  true            # Enable this module
 switch.smallmosfet2.input_on_command                      M106            # Command that will turn this switch on
 switch.smallmosfet2.input_off_command                 	  M107            # Command that will turn this switch off
 switch.smallmosfet2.output_pin                        	  2.13            # Pin this module controls
 switch.smallmosfet2.output_type                       	  digital         # PWM output settable with S parameter in the input_on_comand
 
-# MAIN POWER INPUT MOSFET 3
+# MAIN POWER INPUT MOSFET 3 (Head Lights)
 switch.smallmosfet3.enable                                true				    # Enable this module
 switch.smallmosfet3.input_on_command                      M800				    # Command that will turn this switch on
 switch.smallmosfet3.input_off_command                     M801				    # Command that will turn this switch off
@@ -256,14 +256,14 @@ switch.smallmosfet6.output_type                           digital         # PWM 
 
 #CONVEYER BELT
 
-# Move Belt Right
+# Move Belt Left
 switch.conveyermotora.enable                                true            # Enable this module
 switch.conveyermotora.input_on_command                      M812				  	# Command that will turn this switch on
 switch.conveyermotora.input_off_command                     M813				  	# Command that will turn this switch off
 switch.conveyermotora.output_pin                            2.4             # Pin this module controls
 switch.conveyermotora.output_type                           digital         # PWM output settable with S parameter in the input_on_comand
 
-# Move Belt Left
+# Move Belt Right
 switch.conveyermotorb.enable                            	  true             # Enable this module
 switch.conveyermotorb.input_on_command                      M814             # Command that will turn this switch on
 switch.conveyermotorb.input_off_command                 	  M815             # Command that will turn this switch off

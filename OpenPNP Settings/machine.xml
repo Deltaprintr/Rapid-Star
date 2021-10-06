@@ -71,52 +71,60 @@
       <heads>
          <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1" visual-homing-method="None" nozzle-solutions-multiplier="1">
             <nozzles>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" axis-Z-id="AXS168cdf27f89d826b" axis-rotation-id="AXS168cdf27f89dd0cb" id="NOZ16a973c67da615f4" name="N2" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" version="200" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" axis-Z-id="AXS168cdf27f89d826b" axis-rotation-id="AXS168cdf27f89dd0cb" id="NOZ16a973c67da615f4" name="N1" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="true" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" version="200" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <blow-off-actuator-name>Blow Solenoid</blow-off-actuator-name>
                </nozzle>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" axis-Z-id="AXS168cdf27f89d826b" axis-rotation-id="AXS168cdf27f89dd0cb" id="NOZ16a976781b6a8604" name="N3" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" version="200" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" axis-Z-id="AXS168cdf27f89d826b" axis-rotation-id="AXS168cdf27f89dd0cb" id="NOZ16a976781b6a8604" name="N2" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="true" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" version="200" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <blow-off-actuator-name>Blow Solenoid</blow-off-actuator-name>
                </nozzle>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" axis-Z-id="AXS168cdf27f89d826b" axis-rotation-id="AXS168cdf27f89dd0cb" id="NOZ16a976789f9a52b0" name="N4" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" version="200" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" axis-Z-id="AXS168cdf27f89d826b" axis-rotation-id="AXS168cdf27f89dd0cb" id="NOZ16a976789f9a52b0" name="N3" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="true" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" version="200" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <blow-off-actuator-name>Blow Solenoid</blow-off-actuator-name>
                </nozzle>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" axis-Z-id="AXS168cdf27f89d826b" axis-rotation-id="AXS168cdf27f89dd0cb" id="NOZ16a976792a9a7fe8" name="N5" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" version="200" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" axis-Z-id="AXS168cdf27f89d826b" axis-rotation-id="AXS168cdf27f89dd0cb" id="NOZ16a976792a9a7fe8" name="N4" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="true" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" version="200" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <blow-off-actuator-name>Blow Solenoid</blow-off-actuator-name>
                </nozzle>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" axis-Z-id="AXS168cdf27f89d826b" axis-rotation-id="AXS168cdf27f89dd0cb" id="NOZ16a97679aecc4350" name="N6" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" version="200" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" axis-Z-id="AXS168cdf27f89d826b" axis-rotation-id="AXS168cdf27f89dd0cb" id="NOZ16a97679aecc4350" name="N5" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="true" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" version="200" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <blow-off-actuator-name>Blow Solenoid</blow-off-actuator-name>
                </nozzle>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" axis-Z-id="AXS168cdf27f89d826b" axis-rotation-id="AXS168cdf27f89dd0cb" id="NOZ16a9767a728e4860" name="N7" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" version="200" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" axis-Z-id="AXS168cdf27f89d826b" axis-rotation-id="AXS168cdf27f89dd0cb" id="NOZ16a9767a728e4860" name="N6" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="true" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" version="200" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <blow-off-actuator-name>Blow Solenoid</blow-off-actuator-name>
                </nozzle>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" axis-Z-id="AXS168cdf27f89d826b" axis-rotation-id="AXS168cdf27f89dd0cb" id="NOZ16a976816f71bc14" name="N8" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" version="200" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" axis-Z-id="AXS168cdf27f89d826b" axis-rotation-id="AXS168cdf27f89dd0cb" id="NOZ16a976816f71bc14" name="N7" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="true" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" version="200" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <blow-off-actuator-name>Blow Solenoid</blow-off-actuator-name>
                </nozzle>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" axis-Z-id="AXS168cdf27f89d826b" axis-rotation-id="AXS168cdf27f89dd0cb" id="NOZ16a97f9bbe52c015" name="N1" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" version="200" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" axis-Z-id="AXS168cdf27f89d826b" axis-rotation-id="AXS168cdf27f89dd0cb" id="NOZ16a97f9bbe52c015" name="N8" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="true" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" version="200" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <blow-off-actuator-name>Blow Solenoid</blow-off-actuator-name>
                </nozzle>
             </nozzles>
             <actuators>
                <actuator class="org.openpnp.machine.reference.ReferenceActuator" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" id="ACT16973e7aab296f6b" name="Head Lights" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV165027fba5e86b36" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16a2f44414b0d66d" name="Blow Solenoid" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV165027fba5e86b36" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" axis-X-id="AXS168cdf27f89602e3" axis-Y-id="AXS168cdf27f89af70e" id="ACT16a2f44414b0d66d" name="Blow Solenoid" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV165027fba5e86b36" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                </actuator>
             </actuators>
@@ -190,7 +198,19 @@
          <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16aa1cc1eeef58e6" name="Vac Pump" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV165027fba5e86b36" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </actuator>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16ab0a4fa77f6eef" name="Rapid Feeders" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV165027fba5e86b36" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16ab0a4fa77f6eef" name="Rapid Feeders" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16ab0a65c93a2933" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+         </actuator>
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16ab5f18268a3e9e" name="Nozzle Magazine" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV165027fba5e86b36" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+         </actuator>
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16ab5f3b6f8955aa" name="Conveyor Belt" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV165027fba5e86b36" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+         </actuator>
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16ab5f5895378911" name="Conveyor Grip" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV165027fba5e86b36" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+         </actuator>
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16ab5f72ae2bac61" name="Upward Lights" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV165027fba5e86b36" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </actuator>
       </actuators>
@@ -289,7 +309,7 @@
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <detected-firmware><![CDATA[FIRMWARE_NAME:Smoothieware, FIRMWARE_URL:http%3A//smoothieware.org, X-SOURCE_CODE_URL:https%3A//github.com/markmaker/Smoothieware/tree/feature/best-for-pnp, FIRMWARE_VERSION:feature/best-for-pnp-23a1f0db, X-FIRMWARE_BUILD_DATE:Feb 15 2021 20:36:17, X-SYSTEM_CLOCK:120MHz, X-AXES:6, X-PAXES:6, X-GRBL_MODE:0, X-CNC:0, X-MSD:1]]></detected-firmware>
-            <reported-axes><![CDATA[ok C: X:500.0000 Y:100.0000 Z:50.0000 A:0.0000 B:0.0000 C:0.0000]]></reported-axes>
+            <reported-axes><![CDATA[ok C: X:21.0000 Y:0.0000 Z:0.0000 A:0.0000 B:45.0000 C:0.0000]]></reported-axes>
             <command type="COMMAND_CONFIRM_REGEX">
                <text><![CDATA[^ok.*]]></text>
             </command>
@@ -359,39 +379,51 @@
                <text><![CDATA[{True:M802}{False:M803}]]></text>
             </command>
             <command head-mountable-id="NOZ16a973c67da615f4" type="MOVE_TO_COMMAND">
-               <text><![CDATA[G0 B45]]></text>
+               <text><![CDATA[G0 B0]]></text>
                <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {C:C%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
             </command>
             <command head-mountable-id="NOZ16a976781b6a8604" type="MOVE_TO_COMMAND">
-               <text><![CDATA[G0 B90]]></text>
+               <text><![CDATA[G0 B45]]></text>
                <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {C:C%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
             </command>
             <command head-mountable-id="NOZ16a976789f9a52b0" type="MOVE_TO_COMMAND">
-               <text><![CDATA[G0 B135]]></text>
+               <text><![CDATA[G0 B90]]></text>
                <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {C:C%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
             </command>
             <command head-mountable-id="NOZ16a976792a9a7fe8" type="MOVE_TO_COMMAND">
-               <text><![CDATA[G0 B180]]></text>
+               <text><![CDATA[G0 B135]]></text>
                <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {C:C%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
             </command>
             <command head-mountable-id="NOZ16a97679aecc4350" type="MOVE_TO_COMMAND">
-               <text><![CDATA[G0 B225]]></text>
+               <text><![CDATA[G0 B180]]></text>
                <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {C:C%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
             </command>
             <command head-mountable-id="NOZ16a9767a728e4860" type="MOVE_TO_COMMAND">
-               <text><![CDATA[G0 B270]]></text>
+               <text><![CDATA[G0 B225]]></text>
                <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {C:C%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
             </command>
             <command head-mountable-id="NOZ16a976816f71bc14" type="MOVE_TO_COMMAND">
-               <text><![CDATA[G0 B315]]></text>
+               <text><![CDATA[G0 B270]]></text>
                <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {C:C%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
             </command>
             <command head-mountable-id="NOZ16a97f9bbe52c015" type="MOVE_TO_COMMAND">
-               <text><![CDATA[G0 B0]]></text>
+               <text><![CDATA[G0 B315]]></text>
                <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {C:C%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
             </command>
             <command head-mountable-id="ACT16aa1cc1eeef58e6" type="ACTUATE_BOOLEAN_COMMAND">
                <text><![CDATA[{True:M816}{False:M817}]]></text>
+            </command>
+            <command head-mountable-id="ACT16ab5f18268a3e9e" type="ACTUATE_BOOLEAN_COMMAND">
+               <text><![CDATA[{True:M804}{False:M805}]]></text>
+            </command>
+            <command head-mountable-id="ACT16ab5f3b6f8955aa" type="ACTUATE_BOOLEAN_COMMAND">
+               <text><![CDATA[{True:M814}{False:M815}]]></text>
+            </command>
+            <command head-mountable-id="ACT16ab5f5895378911" type="ACTUATE_BOOLEAN_COMMAND">
+               <text><![CDATA[{True:M280 S10}{False:M280 S5}]]></text>
+            </command>
+            <command head-mountable-id="ACT16ab5f72ae2bac61" type="ACTUATE_BOOLEAN_COMMAND">
+               <text><![CDATA[{True:M106}{False:M107}]]></text>
             </command>
          </driver>
          <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV16ab0a65c93a2933" name="Rapid Feeder Motherboard" motion-control-type="ToolpathFeedRate" communications="serial" connection-keep-alive="false" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="5000" connect-wait-time-milliseconds="3000" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="false" compress-gcode="false" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
@@ -1578,8 +1610,10 @@
       </fiducial-locator>
       <motion-planner class="org.openpnp.machine.reference.driver.NullMotionPlanner" maximum-plan-history="60.0"/>
       <home-after-enabled>false</home-after-enabled>
-      <solutions target-milestone="Welcome">
-         <dismissed-solutions class="java.util.HashSet"/>
+      <solutions target-milestone="Basics">
+         <dismissed-solutions class="java.util.HashSet">
+            <string>4cfccdb6189be00811d0ba64fcb2e25386f1eaac</string>
+         </dismissed-solutions>
       </solutions>
    </machine>
 </openpnp-machine>
