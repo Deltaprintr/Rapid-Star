@@ -55,7 +55,7 @@
             <jerk-per-second-3 value="0.0" units="Millimeters"/>
             <resolution>1.0E-4</resolution>
          </axis>
-         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS168cdf5a32bdd7ab" name="D" type="Rotation" driver-id="DRV165027fba5e86b36" letter="B" backlash-compensation-method="None" backlash-speed-factor="0.1" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false">
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS168cdf5a32bdd7ab" name="D" type="Rotation" driver-id="DRV165027fba5e86b36" letter="B" backlash-compensation-method="None" backlash-speed-factor="0.1" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="true" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false">
             <home-coordinate value="0.0" units="Millimeters"/>
             <backlash-offset value="0.0" units="Millimeters"/>
             <soft-limit-low value="0.0" units="Millimeters"/>
@@ -133,7 +133,7 @@
                   <units-per-pixel units="Millimeters" x="0.01607717" y="0.0166113" z="0.0" rotation="0.0"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-                  <calibration enabled="true">
+                  <calibration enabled="false">
                      <camera-matrix length="9">-1.3130212883898926E307, -1.3130212884391347E307, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
                      <distortion-coefficients length="5">2.13073555394E-312, 6.071E-320, 2.0691572772268053E161, 1.8198445565916874E-306, 2.6308E-319</distortion-coefficients>
                   </calibration>
@@ -168,7 +168,7 @@
          </feeder>
       </feeders>
       <cameras>
-         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM16a9b22ef81d306a" name="Upward Cam" looking="Down" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" settle-method="FixedTime" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" deinterlace="false" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" unique-id="USB 2.0 Camera #2 (HD Camera Manufacturer) 0x1432000005a39310" format-id="0">
+         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM16a9b22ef81d306a" name="Upward Cam" looking="Down" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" settle-method="FixedTime" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" deinterlace="false" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" unique-id="USB 2.0 Camera #2 (HD Camera Manufacturer) 0x1432000005a39310" format-id="7">
             <units-per-pixel units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -303,13 +303,13 @@
          </part-alignment>
       </part-alignments>
       <drivers>
-         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV165027fba5e86b36" name="Rapid Board" motion-control-type="ToolpathFeedRate" communications="serial" connection-keep-alive="true" units="Millimeters" max-feed-rate="10000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="5000" connect-wait-time-milliseconds="3000" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="false" compress-gcode="false" logging-gcode="true" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
+         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV165027fba5e86b36" name="Rapid Board" motion-control-type="ToolpathFeedRate" communications="serial" connection-keep-alive="false" units="Millimeters" max-feed-rate="15000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="5000" connect-wait-time-milliseconds="3000" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="false" compress-gcode="false" logging-gcode="true" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
             <serial line-ending-type="LF" port-name="cu.usbmodem143101" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
             <tcp line-ending-type="LF" ip-address="127.0.0.1" port="23" name="TcpCommunications"/>
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <detected-firmware><![CDATA[FIRMWARE_NAME:Smoothieware, FIRMWARE_URL:http%3A//smoothieware.org, X-SOURCE_CODE_URL:https%3A//github.com/markmaker/Smoothieware/tree/feature/best-for-pnp, FIRMWARE_VERSION:feature/best-for-pnp-23a1f0db, X-FIRMWARE_BUILD_DATE:Feb 15 2021 20:36:17, X-SYSTEM_CLOCK:120MHz, X-AXES:6, X-PAXES:6, X-GRBL_MODE:0, X-CNC:0, X-MSD:1]]></detected-firmware>
-            <reported-axes><![CDATA[ok C: X:21.0000 Y:0.0000 Z:0.0000 A:0.0000 B:45.0000 C:0.0000]]></reported-axes>
+            <reported-axes><![CDATA[ok C: X:400.0000 Y:200.0000 Z:50.0000 A:0.0000 B:0.0000 C:0.0000]]></reported-axes>
             <command type="COMMAND_CONFIRM_REGEX">
                <text><![CDATA[^ok.*]]></text>
             </command>
@@ -322,7 +322,7 @@
                <text><![CDATA[G28 X Y Z B C ; Home all axes]]></text>
             </command>
             <command type="MOVE_TO_COMMAND">
-               <text><![CDATA[G0 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {B:B%.4f} {C:C%.4f} F{FeedRate:%.0f} ; Send standard Gcode move]]></text>
+               <text><![CDATA[{Acceleration:M204 S%.2f} G1 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {C:C%.4f} {B:B%.4f} {FeedRate:F%.2f} ; move to target]]></text>
             </command>
             <command type="MOVE_TO_COMPLETE_COMMAND">
                <text><![CDATA[M400 ; Wait for moves to complete before returning]]></text>
@@ -424,6 +424,15 @@
             </command>
             <command head-mountable-id="ACT16ab5f72ae2bac61" type="ACTUATE_BOOLEAN_COMMAND">
                <text><![CDATA[{True:M106}{False:M107}]]></text>
+            </command>
+            <command type="GET_POSITION_COMMAND">
+               <text><![CDATA[M114 ; get position]]></text>
+            </command>
+            <command type="POSITION_REPORT_REGEX">
+               <text><![CDATA[^.*X:(?<X>-?\d+\.\d+) Y:(?<Y>-?\d+\.\d+) Z:(?<Z>-?\d+\.\d+) .*B:(?<B>-?\d+\.\d+) C:(?<C>-?\d+\.\d+).*]]></text>
+            </command>
+            <command type="SET_GLOBAL_OFFSETS_COMMAND">
+               <text><![CDATA[G92 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {C:C%.4f} {B:B%.4f} ; reset coordinates]]></text>
             </command>
          </driver>
          <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV16ab0a65c93a2933" name="Rapid Feeder Motherboard" motion-control-type="ToolpathFeedRate" communications="serial" connection-keep-alive="false" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="5000" connect-wait-time-milliseconds="3000" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="false" compress-gcode="false" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
@@ -1612,7 +1621,71 @@
       <home-after-enabled>false</home-after-enabled>
       <solutions target-milestone="Basics">
          <dismissed-solutions class="java.util.HashSet">
+            <string>dae9e7dc82b8eba04fd7d61ba7dc439bf5d0f2ab</string>
+            <string>2862ee68c230f42475d5fd8c980393f8628d12a7</string>
+            <string>33ec74203af11e3c7299701e56dfd87aefbe9ef1</string>
             <string>4cfccdb6189be00811d0ba64fcb2e25386f1eaac</string>
+            <string>3004226d89aa2bae1cdc0c3402e2eb37417d3bc4</string>
+            <string>cc058c210fa4255590541d11aa69fedd56f95f12</string>
+            <string>b1113f765c5aee363c34b7473a299496c64577e3</string>
+            <string>ce546c2ec47cbb0bd833264f009a1f6a0533a030</string>
+            <string>2744276a3d7d7ef90d7cf44cdc34d4d29410839b</string>
+            <string>fa871ec9dfe1764e8cb3d584e0403624fc23e610</string>
+            <string>d43ea99569566ceb4d47deede55e9d899cbbcc76</string>
+            <string>bace5f2cee904b8acbddbfdc1555310f4d8b0369</string>
+            <string>3ca50ab502558826693ade7441e704c721b9cc07</string>
+            <string>58089980e4931547f34646d64c95a06ee6e66def</string>
+            <string>cdc5d436df368a2de7c8631ae25d064d0feb29ba</string>
+            <string>af507b9e45718a182964244387ba941388d0fe90</string>
+            <string>e3f386e62f1a9c57b58fbd3b731ea287d3660b86</string>
+            <string>04912ac37e42b05f95fcfa395a56235ee7cd4035</string>
+            <string>832cdca0dfae2a66dcf49a4ece2efa7c9fa5834d</string>
+            <string>f9a99fb3bb958b5e701e6af61bc173fd9010542b</string>
+            <string>b3d0e8a2b0216e6649969176c96d7647bb437302</string>
+            <string>65cc707bef152c771863663949295a6ef30fadc2</string>
+            <string>71c094d3b288b8d44abc2231e8c60f1c61248ca6</string>
+            <string>26204b5f88eb30ba446f568821e3826530489f73</string>
+            <string>4a6c9223d1f773bcfa3e7679f31053e93a3ed4e4</string>
+            <string>4f8a88168a8bce9211f08dea85beef6ece94b777</string>
+            <string>411903c91e8ab9b3149672a13f70786931bbbb55</string>
+            <string>c1d5ad5eeefaf4ada134038d4d241276a9b112b8</string>
+            <string>cc75953742bc65f5adf8a9f62882f08d583ef5a0</string>
+            <string>b80d8a36e017403c902348c61c829e809bffdcf9</string>
+            <string>b7e0a86425c090a0060273d5ae12061d836d75e4</string>
+            <string>f8ac2ddacb886f713580601a56bbf8198c17cbba</string>
+            <string>59d53d909bcf42f600093e2d4cd3ab0a2e5e4929</string>
+            <string>94352505bfe4580cc2efdfaa499f49dfd22f8ff7</string>
+            <string>20ffe7f4d83ddbf59d97aaccab44010dbcc0b425</string>
+            <string>d7b4be60ba67c39e64e4357cbab1c47582ca999a</string>
+            <string>a2d3a1a94a2e90f1fc9aaea4f2457f7490ca8127</string>
+            <string>a5eb011d6b82f5f561e1200706cd00b731cad65c</string>
+            <string>d483a7d58fcfcb120748194cecd81c525a89f444</string>
+            <string>8dc2e555b31c1dc689602106e3dda0b046783b65</string>
+            <string>6fbef2ef4f5e79ca886b423506f8bd61480876e6</string>
+            <string>6b6036c5ec36e1a9af2f083b03c261f28ce68a41</string>
+            <string>b57c26613c55715e60039ff45b0a486091010c45</string>
+            <string>41e39362b8fdb118427dfc9e212add6d5afb6bb2</string>
+            <string>aa4c996cfb35b8dfe6f8d30a914f5cae19796e53</string>
+            <string>9e2f7c5862f8accbde0b972a3887b1bf846b67e5</string>
+            <string>a25fcb111c727a9c4722eb4265f5ff0dae5e3f3e</string>
+            <string>7d444c9e85a15cab31440f26d12b2158a80b6a0c</string>
+            <string>514d391daea04efb49f68642d00e44cdafd27486</string>
+            <string>97930ed370951435cd960f7dca12a53e772db813</string>
+            <string>6ff2b3a7e716eacb141eb9e7dea0bac31f188a94</string>
+            <string>b12ab92590d07e0b9b50795cd8ff49afd776b035</string>
+            <string>39c6073e957fe9406816e339e8d444034492a52a</string>
+            <string>90cf2aa0da01fc3727139fe1cce840af77f4543d</string>
+            <string>9197a02b0ba0fa6a06f9e5675520b47754f19227</string>
+            <string>755d6ede5d48234c98e3cd680ff5b30a1e0af0b6</string>
+            <string>2fa06ef7e5b1403b902ee507fe4a514de67e0fb7</string>
+            <string>14121071939f7a10ef0add3c5d6e494d7e8ddcc5</string>
+            <string>75f10bfad2b0790a5f91896adbbd061c4863babc</string>
+            <string>2362e21bec5d0f520877e4914ca5baf982e6a359</string>
+            <string>b8f9a488e04989d4a21eedd8223252eb9c6e0c9a</string>
+            <string>3a24e97b9a4e688289c40ecc48ce3c3c6039ae02</string>
+            <string>934deaf4d9efb95c2b78c1f2fdf72b147d28fe13</string>
+            <string>57fd57d098f007ec11bdd5f51f62ba5a944032f0</string>
+            <string>eb14e33c19d8f415c7b167716d2298b238e91c9e</string>
          </dismissed-solutions>
       </solutions>
    </machine>
